@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-4-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Fontasome Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/x.icon" href="./GNY solutions.png">
+    <title>GNY Solutions</title>
+    <style type="text/css">
+        .suite {
+            background-color: rgb(245, 247, 248);
+            height: 500px;
+            width: 100%;
+        }
+
+        .suite1 {
+
+            margin-top: 130px;
+        }
+
+        .future {
+            color: blue;
+            font-weight: 600;
+        }
+
+        .suite2 {
+            text-align: center;
+        }
+
+        .suite2 img {
+            width: 500px;
+            margin-top: 80px;
+        }
+
+        .suites {
+            background-color: rgb(245, 247, 248);
+            height: 500px;
+            width: 100%;
+            display: none;
+        }
+
+        .active {
+            background-color: white;
+            width: 50%;
+            height: 100px;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 5px;
+            transform: translateY(-50px);
+        }
+
+        .act1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .act1 h1 {
+            font-size: 20px;
+        }
+
+        .actives {
+            background-color: white;
+            width: 50%;
+            height: 100px;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 5px;
+            transform: translateY(-50px);
+            display: none;
+        }
+
+        .track {
+            text-align: center;
+        }
+
+        .pro1 {
+            background-color: aliceblue;
+            width: 100%;
+            height: 750px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .pro2 {
+            background-color: aliceblue;
+            width: 100%;
+            height: 750px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .bot1 {
+            background-color: aliceblue;
+            width: 100%;
+            height: 750px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .bot2 {
+            background-color: aliceblue;
+            width: 100%;
+            height: 750px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .bpm1 {
+            background-color: aliceblue;
+            width: 100%;
+            height: 750px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .bpm2 {
+            background-color: aliceblue;
+            width: 100%;
+            height: 750px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .moc1 {
+            background-color: aliceblue;
+            width: 100%;
+            height: 750px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .icon i {
+            background-color: blueviolet;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .fan {
+            text-align: center;
+        }
+
+        .today {
+            background-color: blue;
+            height: 500px;
+            width: 100%;
+            margin-top: 250px;
+
+        }
+
+        .web {
+            background-image: url("https://i.pinimg.com/originals/68/ec/aa/68ecaa12917084aab47f75a3d999ef8c.jpg");
+            height: 300px;
+            width: 70%;
+            margin: auto;
+            transform: translateY(-150px);
+            opacity: 5px;
+
+        }
+
+        .web1 {
+            transform: translateX(-80px);
+        }
+
+        .email{
+            text-align: center;
+        }
+
+        .footer{
+            background-color: rgb(104, 103, 103);
+            width: 100%;
+            height: 500px;
+        }
+
+        .foot p{
+            font-size: 15px;
+        }
+
+        .last{
+            background-color: rgb(18, 17, 17);
+            height: 60px;
+            width: 100%;
+        }
+        .ft1 h1{
+            font-size: 17px;
+        }
+        .ft1 p{
+            font-size: 14px;
+        }
+
+        @media screen and  (max-width:768px){
+            .suites{
+                background-color: rgb(245, 247, 248);
+                height: 700px;
+                width: 100%;
+                display: block;
+                margin-top: 62px;
+
+            }
+            .that{
+                display: block !important;
+            }
+           .suite2 img{
+            width: 500px;
+            margin-top: 80px;
+
+           }
+
+            .actives{
+                background-color: white;
+                width: 50%;
+                height: 400px;
+                margin: auto;
+                border: 1px solid black;
+                border-radius: 5px;
+                transform: translateY(-100px);
+                display: block;
+            }
+
+            .suite{
+                background-color: rgb(245, 247, 248);
+                height: 550px;
+                width: 100%;
+                display: none !important;
+                ;
+            }
+
+            .active{
+                 display: none; 
+            }
+
+            .track h2{
+                font-size: 20px;
+            }
+
+            .track p{
+                font-size: 15px;
+            }
+
+            .web {
+                background-image: url("https://i.pinimg.com/originals/68/ec/aa/68ecaa12917084aab47f75a3d999ef8c.jpg");
+                height: 600px;
+                width: 70%;
+                margin: auto;
+                transform: translateY(-150px);
+
+
+            }
+
+            .today {
+                background-color: blue;
+                height: 800px;
+                width: 100%;
+                margin-top: 250px;
+
+            }
+
+            .today h1{
+                font-size: 25px;
+            }
+            .toor{
+                background-color: rgb(83, 83, 83);
+                width:100%;
+                height: 700px;
+            }
+
+            .last p{
+                font-size: 10px;
+            }
+            .last i{
+                font-size: 15px;
+            }
+           
+            
+
+            .web {
+                text-align: center;
+            }
+
+            .web img {
+                width: 300px;
+                margin-top: 20px;
+            }
+
+            .web1 {
+                transform: translateX(0px);
+            }
+           
+            .ft1 p{
+                font-size: 11px !important;
+            }
+           .ft1 h1{
+            font-size: 12px !important;
+            font-weight: bold;
+           }
+           .moc1 img{
+            width: 70%;
+            margin-top: 50px;
+            
+        }
+        .bpm1 img{
+            width: 70%;  
+            margin-top: 80px;
+        }
+        .bpm2 img{
+            width: 80%;
+            margin-top: 80px;
+        }
+        .pro1 img{
+            width: 70%;
+            margin-top: 20px;
+           
+        }
+        .pro2 img{
+            width: 70%;
+            margin-top: 20px;
+           
+        }
+        .bot1 img{
+            width: 78%;
+            margin-top: 50px;
+        }
+        .bot2 img{
+            width: 80%;
+            margin-top: 50px;
+        }
+
+        }
+        @media screen and (max-width: 992px) {
+            .footer{
+                background-color: rgb(104, 103, 103);
+                width: 100%;
+                height: 700px;
+            }
+            .that{
+                display: none;
+            }
+            #ft1 p{
+                font-size: 12px;
+            }
+            #ft1 h1{
+                font-size: 20px;
+            }
+            .active {
+            background-color: white;
+            width: 50%;
+            height: 200px;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 5px;
+            transform: translateY(-50px);
+        }
+        
+          
+        }
+        .nav-link{
+            font-weight: bold;
+        }
+        .moc1 img{
+            width: 70%;
+            
+        }
+        .bpm1 img{
+            width: 70%;  
+        }
+        .bpm2 img{
+            width: 80%;
+        }
+        .pro1 img{
+            width: 70%;
+           
+        }
+        .pro2 img{
+            width: 70%;
+           
+        }
+        .bot1 img{
+            width: 78%;
+        }
+        .bot2 img{
+            width: 80%;
+        }
+        .suite2 img{
+            width: 100%;
+        }
+        .navbar{
+            z-index:10;
+            position:fixed;
+            background-color: white;
+            border-bottom: 1px solid black;
+            left: 0;
+            top: 0;
+            right: 0;
+            margin-top: 0px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light text-dark">
+            <a class="navbar-brand" href="#"><img src="https://500apps.com/images/500_apps_logo.svg?v=1669642785631840526" alt=""></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            products
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class=" that nav-item">
+                        <a class="nav-link" href="#">Why 500apps?</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Company
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Contact sales
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            <i class="fa-solid fa-globe"></i> En
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class=" that nav-item">
+                        <a class="nav-link" href="#">Log In</a>
+                    </li>
+
+
+
+                </ul>
+                <button class=" the  ml-auto"
+                    style="background-color: rgb(60, 31, 250); border: none; width: 90px; height: 45px; border-radius: 5px; text-align: center; color: white;">SignUp<br>
+                    <p style="font-size: 8px; text-align: center; ">FREE for 10 users</p>
+            </button>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+
+    <div class="suite">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="suite1">
+
+                        <h1><b>Productivity Suite</b></h1>
+                        <p class="future">future of your work at one place</p>
+                        <p>Analyse your team's activities and know the work progress with productivity suite and
+                            create an amazing environment.</p>
+                        <button class="btn btn-primary">Get started</button>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="suite2">
+                        <img src="https://images.ctfassets.net/vtn4rfaw6n2j/2n31mmIdKEUcwXmqGzPwDD/51f90b0d565834f9a92f65a8d1a44b50/Illustrations-scenes_SDM.png?fit=pad&fm=webp&q=85"  alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+     <div class="active">
+        <div class="row">
+            
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="act1">
+                    <h1><b>30000+</b></h1>
+                    <p>Active users</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="act1">
+                    <h1><b>6</b></h1>
+                    <p>Data Centers</p>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="act1">
+                    <h1><b>99.5%</b></h1>
+                    <p>Global uptime</p>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="act1">
+                    <h1><b>30+</b></h1>
+                    <p>Apps</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="suites">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="suites2">
+                        <img src="https://images.ctfassets.net/vtn4rfaw6n2j/2n31mmIdKEUcwXmqGzPwDD/51f90b0d565834f9a92f65a8d1a44b50/Illustrations-scenes_SDM.png?fit=pad&fm=webp&q=85" width="100%" alt="">
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="suites1">
+
+                        <h1><b>Productivity Suite</b></h1>
+                        <p class="future">future of your work at one place</p>
+                        <p>Analyse your team's activities and know the work progress with <br>productivity suite and
+                            create an amazing environment.</p>
+                        <button class="btn btn-primary">Get started</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="actives">
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="act1">
+                    <h1><b>30000+</b></h1>
+                    <p>Active users</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="act1">
+                    <h1><b>6</b></h1>
+                    <p>Data Centers</p>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="act1">
+                    <h1><b>99.5%</b></h1>
+                    <p>Global uptime</p>
+                </div>
+            </div>
+
+
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="act1">
+                    <h1><b>30+</b></h1>
+                    <p>Apps</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="track">
+        <h2>Bring your team together and track the <br>work status</h2>
+        <p>Give businesses with consolidated access to all of the solutions they need to meet their <br> human resource
+            demands and optimize their operations.</p>
+    </div>
+
+    <div class="icon">
+        <div class="project container">
+            <div class="row ">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="pro1     container">
+                        <h1 style="padding-top: 50px;"><i class="fa-solid fa-check"></i></h1>
+                        <h1>Projectsly</h1>
+                        <p>Project management software that enables teams to centralize project planning and execute
+                            project 
+                            successfully.Project is a part of 500apps business suite.Learn more about <a
+                                href="#">Project Management Software</a></p>
+                        <img src="https://projectsly.com/images/unlimited-projects-screenshot.png?v=1668583469679288101"
+                             alt="">
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="pro2    container">
+                        <h1 style="padding-top: 50px;"><i style="background-color:greenyellow ;" class="fa-solid fa-calendar-days"></i></h1>
+                        <h1>Schedule.cc</h1>
+                        <p>Appointment schedulling software by Schedule.cc that forever changes how you schedulling
+                            on appointmet or  meeting.Schedule.cc is a part of 500apps business 
+                            suite.Learn more about <a href="#">Appointment schedulling</a></p>
+                        <img src="https://projectsly.com/images/goal-management-screenshot.png?v=1668583469679288101"
+                             alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="botpath container">
+            <div class="row  ">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="bot1     container">
+                        <h1 style="padding-top: 50px;"><i class="fa-solid fa-robot"></i></h1>
+                        <h1>Botpath</h1>
+                        <p>RPA software to execute your tasks automitically and increase efficincy by reducing
+                            risks.BotPath is a part of 
+                            500apps business suite. Learn more about <a href="#">Robotic <br>Process Automation</a></p>
+                        <img style="width: 68%;" src="https://500mail.com/images/unlimited-mailboxes-screenshot.png?v=1669450501636745582"
+                             alt="">
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="bot2     container">
+                        <h1 style="padding-top: 50px;"><i class="fa-solid fa-link"></i></h1>
+                        <h1>ZapUp</h1>
+                        <p> Workflow Automation and app integration software to connect your favarite apps and
+                            automate your work. 
+                            ZapUp is a part of 500apps business sutie.Learn more  about <a href="#">App integation
+                                Software</a></p>
+                        <img src="https://zapup.com/images/workflow-automation-software-inner-feature-rhs.png?v=1666348090608977194"
+                          class="m-5" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="bpmapp container">
+            <div class="row  ">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="bpm1     container">
+                        <h1 style="padding-top: 50px;"><i style="background-color: greenyellow;" class="fa-solid fa-stethoscope"></i></h1>
+                        <h1>BPMApp</h1>
+                        <p>Business process automation software to manage and optimize processes.BPMApp is a part of
+                            500apps 
+                            business suite.Learn more about <a href="#">Business Process Management</a></p>
+                        <img src="https://openedornot.com/images/track-emails-screenshot.png?v=1665466070883300888"
+                             class="m-5" alt="">
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="bpm2     container">
+                        <h1 style="padding-top: 50px;"><i class="fa-solid fa-clock"></i></h1>
+                        <h1>Clockly</h1>
+                        <p>Time tracking software that simplifies time  management,monitors employees, manages 
+                            timessheets and payroll to help you boost team 
+                            productivity .Clockly is a part of 500apps busniess suite .Learn more about <a
+                                href="#">Time Tracking</a></p>
+                        <img src="https://500apps.com/images/marketing/track_ly_screenshots.png?v=1669642785631840526"
+                            alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mockframe container ">
+            <div class="row  ">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="moc1     container ">
+                        <h1 style="padding-top: 50px;"><i class="fa-brands fa-nfc-symbol"></i></h1>
+                        <h1>MockFrame</h1>
+                        <p>Create and manage product wireframes using inbulit <br> tool and give wings to your
+                            creativity by workinh <br> collaboratively
+                            .Learn more about <a href="#">wireframe Tool</a></p>
+                        <img src="https://mockframe.com/images/real-time-updates-screenshot.png?v=1668586810690984835"
+                          alt="">
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="pro container">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="fans container">
+        <div class="fan">
+
+
+            <p style="color: blue; margin-top: 50px;">CUSTOMER STORIES <br>
+            <h3>our customers are our biggest fans</h3>
+            </p>
+
+        </div>
+        <div style="margin-top: 30px;"></div>
+        <div class="row">
+
+            <div class="col-sm-12 col-md-4 col-lg4">
+                <div class="fan1" style="text-align: center;">
+                    <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=2000"
+                      style="border: 1px solid black; box-shadow: 0px 0px 2px black;"  width="200px" height="200px" alt="">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg8">
+                <div class="fan2">
+                    <p style="margin-top:50px ;"> We are using 500apps consolidated business growth.All the apps are
+                        very handy as we have the best customer sucess consultants working together with our Sales
+                        Director. </p>
+                    <h5 style="font-style: italic;">Christian Bjerre Nielsen</h5>
+                    <p style="font-style: italic;">CPO at uQualio</p>
+                    <div style="float: right;">
+                        <img src="https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=2000"
+                            style="border:3px solid blue ;" width="30px" height="30px" alt="">
+                        <img src="data:image/jpeg;base64,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"
+                            width="30px" height="30px" alt="">
+                        <img src="https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?w=2000"
+                            width="30px" height="30px" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="today">
+        <div class="web">
+            <div class="row">
+                <div class="col-sm-12 col-md-5 col-lg-5">
+                    <div class="web1">
+                        <img src="man-removebg-preview.png" width="450px" alt="">
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-7 col-lg-7">
+                    <div class="web2 float-left">
+                        <h3 style="margin-top: 50px; color: white;">Learn why thousands of businesses use 500apps
+                        </h3>
+                        <p style="color: rgb(219, 217, 217);">Register now and see how 500apps can help run your
+                            business like the Fortune 500</p>
+                        <button class="btn btn-outline-info text-white">Register for Webinar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="email">
+            <h1 style="color: white; font-size: 23px;">Get Started with 500apps Today</h1>
+            <input type="email" style="border-radius: 5px;" placeholder="Enter Email" name="email" />
+            <input type="submit"
+                style="background-color: black; border: 1px solid white; border-radius: 5px; color: white; "
+                value="Get Started" />
+
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">
+    <div class="toor">
+        <div class="foot container">
+            <div class="row">
+                <div class="col-3 col-lg-2">
+                    <div style="color: white;" class="ft1"  id="ft1">
+                        <h1 style="margin-top: 30px; ">500apps</h1>
+                       <p> Get access to 37+ <br>
+                        Fortune 500 standard <br>
+                        apps to help you take <br>
+                        your growing business to <br>
+                        the next level. <br><br>
+                        99 well Street #1135 <br>
+                        New York NY 10005</p>
+                    </div>
+                </div>
+
+                <div class="col-3 col-lg-2">
+                    <div style="color: white;" class="ft1"  id="ft1">
+                        <h1 style="margin-top: 30px; ">Productivity</h1>
+                        <p>Projectsly <br>
+                            Schedule.cc <br>
+                            BotPath <br>
+                            ZapUp <br>
+                            BPMApp <br>
+                            Clockly <br>
+                            MockFrame</p>
+                    </div>
+                </div>
+
+                <div class="col-3 col-lg-2">
+                    <div style="color: white;" class="ft1"  id="ft1">
+                        <h1 style="margin-top: 30px; ">Marketing</h1>
+                        <p>NinjaSites <br>
+                            NinjaSEO <br>
+                            Forms.io <br>
+                            MailSend <br>
+                            HipSocial <br>
+                            SiteRecording <br>
+                            NinjaSEM <br>
+                            PushNinja <br>
+                            NinjaContent <br>
+                            ConverPath <br>
+                            Personalize.cc</p>
+                    </div>
+                </div>
+
+                <div class="col-3  col-lg-1">
+                    <div style="color: white;" class="ft1"  id="ft1">
+                        <h1 style="margin-top: 30px; ">Sales</h1>
+                        <p>Finder.io <br>
+                            CRM.io <br>
+                            Sign.cc <br>
+                            VoxDesk</p>
+                        <h1  id="ft1">Developers</h1>
+                        <p>AppUP <br>
+                            Applet.io <br>
+                            SitePing</p>
+                    </div>
+                </div>
+
+                <div class="col-3 col-lg-1">
+                    <div style="color: white;" class="ft1"  id="ft1">
+                        <h1 style="margin-top: 30px; ">Support</h1>
+                        <p>Support.cc <br>
+                            NinjaChat <br>
+                            UserTracker <br>
+                            BotUp</p>
+
+                        <h1  id="ft1">HR & Ops</h1>
+                        <p>RecruitHire <br>
+                            NinjaInterview</p>
+
+                        <h1  id="ft1" >Extension</h1>
+                        <p>OpenedOrNot <br>
+                            NinjaCapture <br>
+                            Projectsly <br>
+                            BotPath <br>
+                            NinjaSEO <br>
+                            Finder.io</p>
+                    </div>
+                </div>
+
+                <div class="col-3  col-lg-2">
+                    <div style="color: white;" class="ft1" id="ft1">
+                        <h1 style="margin-top: 30px; ">Resources</h1>
+                        <p>Why 500apps?<br> Essentials <br> Compare Us <br>Blog <br> Zoho One Alternative</p>
+                    </div>
+                </div>
+
+                <div class="col-3 col-lg-2">
+                    <div style="color: white;" class="ft1"  id="ft1">
+                        <h1 style="margin-top: 30px;">CONTACT US</h1>
+                        <p >+1-877-904-4227 <br>
+                           +44-808-169-7676 <br>
+                            +61-1800-143-676 <br>
+                            sales@500apps.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="last">
+        <div class=" text-white d-flex container p-3 ">
+            <p>Privacy Policy</p>
+            <div class="mx-auto">
+                <p>500apps.com &copy; 2022. All Rights Reserved</p>
+            </div>
+            <div class="ml-auto">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
